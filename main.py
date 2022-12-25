@@ -15,6 +15,8 @@ selection = 0
 game_list = []
 # Trò chơi đáp ứng tiêu chí tìm kiếm của người dùng
 rating_list =  [5, 4, 3, 2, 1]
+# nghề nghiệp
+job_list = ['Học sinh, sinh viên', 'Người đi làm']
 
 # [Gọi phương thức lớp ActionData] Thay đổi nội dung hiển thị giao diện người dùng theo tương tác của người dùng
 # Phương thức WHEN CHANGED kích hoạt goto_prev_property và goto_next_property
@@ -65,6 +67,13 @@ def properties_filter():
     else:
         result_message['text'] = 'Không có trò chơi phù hợp nào trong cơ sở dữ liệu'
 
+def switch_suggest_screen():
+    search_screen.pack_forget()
+    suggest_screen.pack()
+
+def switch_search_screen():
+    search_screen.pack()
+    suggest_screen.pack_forget()
 
 if __name__ == '__main__':
 
@@ -74,9 +83,12 @@ if __name__ == '__main__':
     window.iconbitmap('./logo.ico')
     window.resizable(width=False, height=False)
 
+    search_screen = Frame(window)
+    suggest_screen = Frame(window)
+
     # Thông tin trò chơi được đề xuất được đặt ở hàng thứ 0 và hàng đầu tiên cho người dùng
-    message = Label(window, text='[Gợi ý game phù hợp]', font=('Microsoft YaHei', 18))
-    result_window = Frame(window, width=1024, height=180)
+    message = Label(search_screen, text='[Gợi ý game phù hợp]', font=('Microsoft YaHei', 18))
+    result_window = Frame(search_screen, width=1024, height=180)
     # Giữ kích thước cửa sổ không thay đổi
     result_window.propagate(0)
     message.grid(row=0, columnspan=5)
@@ -84,48 +96,52 @@ if __name__ == '__main__':
     result_message.pack()
     result_window.grid(row=1, columnspan=5)
 
+    # Di chuyển đến màn hình suggest
+    suggest_btn = Button(search_screen, text='Gợi ý', command=lambda:switch_suggest_screen())
+    suggest_btn.grid(row=0, column=0, sticky='e', ipadx=20, pady=30)
+
     # Hàng thứ hai đặt nút, khi có nhiều thông tin được đề xuất, hãy sử dụng nút để chuyển
-    prev_btn = Button(window, text='Trước', command=lambda:switch_property('prev'))
-    next_btn = Button(window, text='Tiếp theo', command=lambda:switch_property('next'))
+    prev_btn = Button(search_screen, text='Trước', command=lambda:switch_property('prev'))
+    next_btn = Button(search_screen, text='Tiếp theo', command=lambda:switch_property('next'))
     prev_btn.grid(row=2, column=3, sticky='e', ipadx=20, pady=30)
     next_btn.grid(row=2, column=4, ipadx=20)
 
     # Dòng thứ ba được sử dụng để chọn nền tảng và loại trò chơi của trò chơi
-    platform_label = Label(window, text='Nền tảng', font=('tMicrosoft YaHei',12,'bold'))
-    genre_label = Label(window, text='Thể loại', font=('tMicrosoft YaHei',12,'bold'))
-    platform_select = ttk.Combobox(window)
-    genre_select = ttk.Combobox(window)
+    platform_label = Label(search_screen, text='Nền tảng', font=('tMicrosoft YaHei',12,'bold'))
+    genre_label = Label(search_screen, text='Thể loại', font=('tMicrosoft YaHei',12,'bold'))
+    platform_select = ttk.Combobox(search_screen)
+    genre_select = ttk.Combobox(search_screen)
     platform_label.grid(row=3, column=0)
     platform_select.grid(row=3, column=1)
     genre_label.grid(row=3, column=2)
     genre_select.grid(row=3, column=3)
 
     # Dòng thứ tư, chọn khoảng thời gian phát hành trò chơi
-    time_range_labelA = Label(window, text='Thời gian phát hành từ', font=('tMicrosoft YaHei',12,'bold'))
-    time_range_labelB = Label(window, text='Thời gian phát hành đến', font=('tMicrosoft YaHei',12,'bold'))
-    from_year_select = ttk.Combobox(window)
-    to_year_select = ttk.Combobox(window)
+    time_range_labelA = Label(search_screen, text='Thời gian phát hành từ', font=('tMicrosoft YaHei',12,'bold'))
+    time_range_labelB = Label(search_screen, text='Thời gian phát hành đến', font=('tMicrosoft YaHei',12,'bold'))
+    from_year_select = ttk.Combobox(search_screen)
+    to_year_select = ttk.Combobox(search_screen)
     time_range_labelA.grid(row=4, column=0)
     time_range_labelB.grid(row=4, column=2)
     from_year_select.grid(row=4, column=1)
     to_year_select.grid(row=4, column=3)
 
     # Giới tính, độ tuổi
-    genders = Label(window, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
-    ages = Label(window, text='Tuổi', font=('tMicrosoft YaHei',12,'bold'))
-    genders_select = ttk.Combobox(window)
-    ages_select = ttk.Combobox(window)
+    genders = Label(search_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
+    ages = Label(search_screen, text='Tuổi', font=('tMicrosoft YaHei',12,'bold'))
+    genders_select = ttk.Combobox(search_screen)
+    ages_select = ttk.Combobox(search_screen)
     genders.grid(row=5, column=0)
     ages.grid(row=5, column=2)
     genders_select.grid(row=5, column=1)
     ages_select.grid(row=5, column=3)
 
     # Dòng thứ sáu, xác nhận để gửi các yêu cầu về chỉ số trò chơi đã chọn
-    submit_btn = Button(window, text='Gửi đi', font=('Microsoft YaHei', 15), command=properties_filter)
+    submit_btn = Button(search_screen, text='Gửi đi', font=('Microsoft YaHei', 15), command=properties_filter)
     submit_btn.grid(row=6, column=2, ipadx=70, ipady=10, pady=10)
 
     # Cột ngoài cùng bên phải đặt danh sách Nhóm để chọn xếp hạng trò chơi
-    rating_frame = Frame(window)
+    rating_frame = Frame(search_screen)
     rating_frame.grid(row=3, column=4, rowspan=3)
     rating_note_label = Label(rating_frame, text='Xếp hạng trò chơi', font=('tMicrosoft YaHei',12,'bold'))
     rating_note_label.pack()
@@ -168,6 +184,26 @@ if __name__ == '__main__':
     to_year_select.current(len(Game.YearOfRelease) - 1)
     genders_select.current(0)
     ages_select.current(0)
+
+    # Hiển thị màn hình tìm kiếm
+    search_screen.pack()
+
+
+    ########################################################################
+    # Di chuyển đến màn hình search
+    search_btn = Button(suggest_screen, text='Tìm kiếm', command=lambda:switch_search_screen())
+    search_btn.grid(row=0, column=0, sticky='e', ipadx=20, pady=30)
+
+    # Dòng thứ hai được sử dụng để chọn nghề nghiệp
+    job_label = Label(suggest_screen, text='Nghề nghiệp', font=('tMicrosoft YaHei',12,'bold'))
+    job_select = ttk.Combobox(suggest_screen)
+    job_label.grid(row=2, column=0)
+    job_select.grid(row=2, column=1)
+
+
+    # Tải nội dung của menu thả xuống trên trang chủ theo dữ liệu
+    job_select['value'] = sorted(job_list)
+    job_select.current(0)
 
     # Được sử dụng cho các loại thuộc tính cụ thể và nội dung cụ thể trong các bảng đầu ra ban đầu
     Game.show_genre()

@@ -26,9 +26,9 @@ class ActionData:
     def change_display(self):
         properties = ActionData.properties
         selection = ActionData.selection
-        display_message = '\nTìm thấy cho bạn {} trò chơi, hiện đang hiển thị {} mục\n\nTên trò chơi:{}\nLoại trò chơi:{}\nThời gian phát hành:{}\nNhà phát hành:{}\nGiới tính:{}\nTuổi:{}\nĐánh giá:{} sao\n'.format(
+        display_message = '\nTìm thấy cho bạn {} trò chơi, hiện đang hiển thị {} mục\n\nTên trò chơi:{}\nLoại trò chơi:{}\nThời gian phát hành:{}\nNhà phát hành:{}\nNền tảng:{}\nGiới tính:{}\nTuổi:{}\nĐánh giá:{} sao\n'.format(
                                 len(properties), selection+1,
-                                properties[selection].name, properties[selection].genre,properties[selection].year_of_release, properties[selection].platform,
+                                properties[selection].name, properties[selection].genre,properties[selection].year_of_release, properties[selection].publisher, properties[selection].platform,
                                 properties[selection].gender, properties[selection].age, properties[selection].rating)
         return display_message
 
