@@ -1,7 +1,7 @@
 import os
 import time
 from time import sleep
-from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, filedialog, Radiobutton, ttk
+from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, filedialog, Radiobutton, ttk, Scale, HORIZONTAL
 from Game import Game
 from ActionData import ActionData
 from Evaluation import Evaluation
@@ -16,6 +16,11 @@ game_list = []
 rating_list =  [5, 4, 3, 2, 1]
 # nghề nghiệp
 job_list = ['Học sinh, sinh viên', 'Người đi làm']
+# sở thích
+interest_list = ['Công nghệ', 'Thể thao', 'Du lịch', 'Âm nhạc', 'Mạo hiểm', 'Nghệ thuật', 'Giao tiếp', 'Nấu ăn', 'Mua sắm']
+# mục đích
+purpose_list = ['Giải trí', 'Kết bạn', 'Học tập', 'Tăng kỹ năng']
+
 
 # [Gọi phương thức lớp ActionData] Thay đổi nội dung hiển thị giao diện người dùng theo tương tác của người dùng
 # Phương thức WHEN CHANGED kích hoạt goto_prev_property và goto_next_property
@@ -38,7 +43,6 @@ def properties_filter():
             'ge': genre_select.get(),
             'lb': int(from_year_select.get()),
             'rb': int(to_year_select.get()),
-            'gd': genders_select.get(),
             'age': int(ages_select.get())
             }
     allowed_rating = []
@@ -78,7 +82,7 @@ if __name__ == '__main__':
 
     window = Tk()
     window.title("Play-Smart.expertsystem")
-    window.geometry('1050x640')
+    window.geometry('1150x740')
     window.iconbitmap('./logo.ico')
     window.resizable(width=False, height=False)
 
@@ -97,7 +101,7 @@ if __name__ == '__main__':
 
     # Di chuyển đến màn hình suggest
     suggest_btn = Button(search_screen, text='Gợi ý', command=lambda:switch_suggest_screen())
-    suggest_btn.grid(row=0, column=0, sticky='e', ipadx=20, pady=30)
+    suggest_btn.grid(row=0, column=3, sticky='e', ipadx=20, pady=30)
 
     # Hàng thứ hai đặt nút, khi có nhiều thông tin được đề xuất, hãy sử dụng nút để chuyển
     prev_btn = Button(search_screen, text='Trước', command=lambda:switch_property('prev'))
@@ -125,15 +129,11 @@ if __name__ == '__main__':
     from_year_select.grid(row=4, column=1)
     to_year_select.grid(row=4, column=3)
 
-    # Giới tính, độ tuổi
-    # genders = Label(search_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
+    # độ tuổi
     ages = Label(search_screen, text='Tuổi', font=('tMicrosoft YaHei',12,'bold'))
-    # genders_select = ttk.Combobox(search_screen)
     ages_select = ttk.Combobox(search_screen)
-    # genders.grid(row=5, column=0)
-    ages.grid(row=5, column=2)
-    # genders_select.grid(row=5, column=1)
-    ages_select.grid(row=5, column=3)
+    ages.grid(row=5, column=0)
+    ages_select.grid(row=5, column=1)
 
     # Dòng thứ sáu, xác nhận để gửi các yêu cầu về chỉ số trò chơi đã chọn
     submit_btn = Button(search_screen, text='Tìm kiếm', font=('Microsoft YaHei', 15), command=properties_filter)
@@ -207,27 +207,50 @@ if __name__ == '__main__':
 
     # Di chuyển đến màn hình search
     search_btn = Button(suggest_screen, text='Tìm kiếm', command=lambda:switch_search_screen())
-    search_btn.grid(row=0, column=0, sticky='e', ipadx=20, pady=30)
+    search_btn.grid(row=0, column=3, sticky='e', ipadx=20, pady=30)
 
-    # Dòng thứ tư được sử dụng để chọn nghề nghiệp
+    # Dòng thứ tư được sử dụng để chọn nghề nghiệp và giới tính
     job_label = Label(suggest_screen, text='Nghề nghiệp', font=('tMicrosoft YaHei',12,'bold'))
     job_select = ttk.Combobox(suggest_screen)
-    job_label.grid(row=4, column=0)
+    job_label.grid(row=4, column=0, ipady=15)
     job_select.grid(row=4, column=1)
-
-    # Dòng thứ ba để chọn giới tính
     radio = IntVar()  
     gender_label = Label(suggest_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
-    gender_label.grid(row=5, column=0)
+    gender_label.grid(row=4, column=2, ipady=15)
     male_radio = Radiobutton(suggest_screen, text="Nam", variable=radio, value=1)
     female_radio = Radiobutton(suggest_screen, text="Nữ", variable=radio, value=2)
-    male_radio.grid(row=5, column=1)
-    female_radio.grid(row=5, column=2)
+    male_radio.grid(row=4, column=3)
+    female_radio.grid(row=4, column=4)
+
+    # Dòng thứ năm được sử dụng để chọn sở thích và mục đích chơi
+    interes_label = Label(suggest_screen, text='Sở thích', font=('tMicrosoft YaHei',12,'bold'))
+    interes_select = ttk.Combobox(suggest_screen)
+    interes_label.grid(row=5, column=0, ipady=15)
+    interes_select.grid(row=5, column=1)
+    purpose_label = Label(suggest_screen, text='Mục đích chơi game', font=('tMicrosoft YaHei',12,'bold'))
+    purpose_select = ttk.Combobox(suggest_screen)
+    purpose_label.grid(row=5, column=2, ipady=15)
+    purpose_select.grid(row=5, column=3)
+
+    # Dòng thứ sáu được sử dụng để chọn tuổi
+    age_scale = Scale(suggest_screen, label='Tuổi', font=('tMicrosoft YaHei',12,'bold'), from_=10, to=50, orient=HORIZONTAL,
+             length=400, showvalue=1, tickinterval=10, resolution=1)
+    age_scale.grid(row=6, column=0, columnspan=2, ipady=15,)
+
+    # Dòng thứ sáu, xác nhận để gửi các yêu cầu về chỉ số trò chơi đã chọn
+    submit_suggest_btn = Button(suggest_screen, text='Gợi ý', font=('Microsoft YaHei', 15), command=properties_filter)
+    submit_suggest_btn.grid(row=7, column=2, ipadx=70, ipady=10, pady=10)
 
 
     # Tải nội dung của menu thả xuống trên trang chủ theo dữ liệu
     job_select['value'] = sorted(job_list)
+    interes_select['value'] = sorted(interest_list)
+    purpose_select['value'] = sorted(purpose_list)
+    radio.set(1)
     job_select.current(0)
+    interes_select.current(0)
+    purpose_select.current(0)
+
 
     # Được sử dụng cho các loại thuộc tính cụ thể và nội dung cụ thể trong các bảng đầu ra ban đầu
     Game.show_genre()

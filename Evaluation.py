@@ -6,13 +6,12 @@ class Evaluation():
         self.genre = args['ge']
         self.lb = args['lb']
         self.rb = args['rb']
-        self.gender = args['gd']
         self.age = args['age']
         self.allowed_rating = args['ar']
 
     # các lựa chọn của người dùng
     def print_rule(self):
-        print('【RULE】',self.platform, self.genre, self.lb, self.rb, self.gender, self.age)
+        print('【RULE】',self.platform, self.genre, self.lb, self.rb, self.age)
 
     # sử dụng luật đưa ra kết quả
     def qualified(self, game):
@@ -27,16 +26,8 @@ class Evaluation():
         else:
             form['ge'] = self.genre
 
-        if self.gender == 'Cả nam và nữ':
-            form['gd'] = True
-        else:
-            form['gd'] = self.gender
-            
-        print(self.allowed_rating)
-
         return (game.platform == form['pf'] or bool(game.platform) == form['pf']) \
             and (game.genre == form['ge'] or bool(game.genre) == form['ge']) \
             and (game.year_of_release == NORECORD or game.year_of_release >= self.lb and game.year_of_release <= self.rb)\
-            and (game.gender == form['gd'] or bool(game.gender) == form['gd']) \
-            and (game.age <= self.age) \
-            and (game.rating == NORECORD or game.rating in self.allowed_rating)
+            and game.age <= self.age \
+            and game.rating in self.allowed_rating

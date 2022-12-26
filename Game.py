@@ -9,8 +9,6 @@ class Game:
     Genre = set()
     # Năm phát hành
     YearOfRelease = set()
-    # Giới tính
-    Gender = set()
     # Độ tuổi
     Age = set()
     
@@ -20,25 +18,24 @@ class Game:
         # Dữ liệu bị thiếu được thay thế bằng chuỗi no_record
         self.name = data.Name
         self.platform = data.Platform
-        try:
-            self.year_of_release = int(data.Year_of_Release) 
-        except ValueError:
-            self.year_of_release = NO_INFORMATION
-        
+        self.year_of_release = int(data.Year_of_Release) 
         self.genre = data.Genre
         self.publisher = data.Publisher
-        self.rating = data.Rating
-        self.gender = data.Gender
-        self.age = data.Ages
+        self.rating = int(data.Rating)
+        self.age = int(data.Ages)
+
+        try:
+            self.developer = data.Developer
+        except ValueError:
+            self.developer = NO_INFORMATION
+
+        self.price = data.Price
+        self.number_of_player = data.Number_of_players
+
         # ghi loại trò chơi
         Game.Platform.add(self.platform)
-        # Tránh các loại trò chơi NaN trong menu thả xuống
-        if self.genre != NO_INFORMATION:
-            Game.Genre.add(self.genre)
-        if self.year_of_release != NO_INFORMATION:
-            Game.YearOfRelease.add(int(self.year_of_release))
-
-        Game.Gender.add(self.gender)
+        Game.Genre.add(self.genre)
+        Game.YearOfRelease.add(int(self.year_of_release))
         Game.Age.add(self.age)
         Game.games.append(self)
 

@@ -26,10 +26,10 @@ class ActionData:
     def change_display(self):
         properties = ActionData.properties
         selection = ActionData.selection
-        display_message = '\nTìm thấy cho bạn {} trò chơi, hiện đang hiển thị {} mục\n\nTên trò chơi:{}\nLoại trò chơi:{}\nThời gian phát hành:{}\nNhà phát hành:{}\nNền tảng:{}\nGiới tính:{}\nTuổi:{}\nĐánh giá:{} sao\n'.format(
+        display_message = '\nTìm thấy cho bạn {} trò chơi, hiện đang hiển thị {} mục\n\nTên trò chơi: {}\nThể loại: {}\nThời gian phát hành: {}\nNhà phát hành: {}\nNhà phát triển: {}\nNền tảng: {}\nTuổi: {}\nĐánh giá: {} sao\nGiá: {}\nSố người chơi: {}\n'.format(
                                 len(properties), selection+1,
-                                properties[selection].name, properties[selection].genre,properties[selection].year_of_release, properties[selection].publisher, properties[selection].platform,
-                                properties[selection].gender, properties[selection].age, properties[selection].rating)
+                                properties[selection].name, properties[selection].genre,properties[selection].year_of_release, properties[selection].publisher, properties[selection].developer,
+                                properties[selection].platform, properties[selection].age, properties[selection].rating, properties[selection].price, properties[selection].number_of_player)
         return display_message
 
     def goto_next_property(self):
