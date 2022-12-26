@@ -4,6 +4,7 @@ from time import sleep
 from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, filedialog, Radiobutton, ttk, Scale, HORIZONTAL
 from Game import Game
 from ActionData import ActionData
+from Search import Search
 from Evaluation import Evaluation
 
 # Một danh sách các intVars được liên kết với chín xếp hạng khác nhau. Khi nó là 1, điều đó có nghĩa là nó đã được chọn
@@ -31,6 +32,12 @@ def switch_property(direction):
         message = action_data_agent.goto_next_property()
     result_message['text'] = message
 
+def switch_property_suggest(direction):
+    if direction == 'prev':
+        message = action_data_agent.goto_prev_property()
+    else:
+        message = action_data_agent.goto_next_property()
+    result_suggest_message['text'] = message
 
 # [Daemon] Duyệt qua hàng đợi game_list để tìm các phiên bản đủ điều kiện theo điều kiện truy xuất của người dùng
 # Liên kết các thành phần giao diện với daemon và xóa các phiên bản không phù hợp
@@ -50,7 +57,7 @@ def properties_filter():
         if intVar[idx].get():
             allowed_rating.append(rating_list[idx])
     args['ar'] = allowed_rating
-    evaluate = Evaluation(args)
+    evaluate = Search(args)
     evaluate.print_rule()
 
     for game in game_list:
@@ -69,6 +76,36 @@ def properties_filter():
         result_message['text'] = action_data_agent.change_display()
     else:
         result_message['text'] = 'Không có trò chơi phù hợp nào trong cơ sở dữ liệu'
+
+def properties_filter_suggest():
+    # Nhận các điều kiện truy vấn do người dùng chọn trong giao diện từ mỗi thành phần
+    ActionData.properties.clear()
+    
+    args = {'jb': job_select.get(),
+            'gd': int(radio.get()),
+            'it': interes_select.get(),
+            'pp': purpose_select.get(),
+            'age': int(age_scale.get())
+            }
+
+    evaluate = Evaluation(args)
+    evaluate.print_rule()
+    for game in game_list:
+        if evaluate.qualified(game):
+            ActionData.properties.append(game)
+            print(ActionData.properties)
+
+    # Kết quả lựa chọn thiết bị đầu cuối đáp ứng yêu cầu của người dùng
+    print('【RESULT】', len(ActionData.properties))
+    # Sắp xếp kết quả tìm kiếm theo năm theo thứ tự ngược lại
+    ActionData.properties = sorted(ActionData.properties, key=lambda game: game.year_of_release if type(game.year_of_release) == int else -1, reverse=True)
+    # Hiển thị bản ghi đầu tiên phù hợp với yêu cầu của người dùng trong cửa sổ
+    # Cho dù số lượng kết quả kiểm tra là> 0
+    if len(ActionData.properties):
+        ActionData.selection = 0
+        result_suggest_message['text'] = action_data_agent.change_display()
+    else:
+        result_suggest_message['text'] = 'Không có trò chơi phù hợp nào trong cơ sở dữ liệu'
 
 def switch_suggest_screen():
     search_screen.pack_forget()
@@ -200,8 +237,8 @@ if __name__ == '__main__':
     result_suggest.grid(row=1, columnspan=5)
 
     # Hàng thứ hai đặt nút, khi có nhiều thông tin được đề xuất, hãy sử dụng nút để chuyển
-    prev_suggest_btn = Button(suggest_screen, text='Trước', command=lambda:switch_property('prev'))
-    next_suggest_btn = Button(suggest_screen, text='Tiếp theo', command=lambda:switch_property('next'))
+    prev_suggest_btn = Button(suggest_screen, text='Trước', command=lambda:switch_property_suggest('prev'))
+    next_suggest_btn = Button(suggest_screen, text='Tiếp theo', command=lambda:switch_property_suggest('next'))
     prev_suggest_btn.grid(row=2, column=3, sticky='e', ipadx=20, pady=30)
     next_suggest_btn.grid(row=2, column=4, ipadx=20)
 
@@ -238,9 +275,8 @@ if __name__ == '__main__':
     age_scale.grid(row=6, column=0, columnspan=2, ipady=15,)
 
     # Dòng thứ sáu, xác nhận để gửi các yêu cầu về chỉ số trò chơi đã chọn
-    submit_suggest_btn = Button(suggest_screen, text='Gợi ý', font=('Microsoft YaHei', 15), command=properties_filter)
+    submit_suggest_btn = Button(suggest_screen, text='Gợi ý', font=('Microsoft YaHei', 15), command=properties_filter_suggest)
     submit_suggest_btn.grid(row=7, column=2, ipadx=70, ipady=10, pady=10)
-
 
     # Tải nội dung của menu thả xuống trên trang chủ theo dữ liệu
     job_select['value'] = sorted(job_list)
