@@ -1,4 +1,260 @@
-Name,Platform,Year_of_Release,Genre,Publisher,Rating,Gender,Ages
-Free Fire,iOS,2017,Hành động,GARENA,5,Nam,18
-Free Fire,Android,2020,Hành động,GARENA,5,Nữ,20
-Free Fire,iOS,2017,Đua xe,GARENA,5,Nam,18
+Name,Platform,Year_of_Release,Genre,Publisher,Rating,Gender,Ages,Developer,Price,Number of players
+Free Fire,iOS,2017,Hành động,GARENA,5,Nam,18,GARENA,Miễn phí, Đồng đội nhiều người
+Free Fire,Android,2020,Hành động,GARENA,5,Nữ,20,GARENA,Miễn phí, Đồng đội nhiều người
+Free Fire,iOS,2017,Đua xe,GARENA,5,Nam,18,GARENA,Miễn phí,Một người
+Wii Sports,Wii,2006,Thể thao,Nintendo,4,Nam,21,Nintendo,Miễn phí,Một người
+Super Mario Bros.,NES,1985,Platform,Nintendo,,Nữ,20,,Miễn phí,Một người
+Mario Kart Wii,Wii,2008,Đua xe,Nintendo,4,Nam,18,Nintendo,Miễn phí,Một người
+Wii Sports Resort,Wii,2009,Thể thao,Nintendo,4,Nam,25,Nintendo,Miễn phí,Một người
+Pokemon Red/Pokemon Blue,GB,1996,Nhập vai,Nintendo,,Nữ,18,,Miễn phí,Một người
+Tetris,GB,1989,Giải đố,Nintendo,,Nữ,24,,Miễn phí,Một người
+New Super Mario Bros.,DS,2006,Platform,Nintendo,4,Nữ,19,Nintendo,Miễn phí,Một người
+Wii Play,Wii,2006,Misc,Nintendo,4,Nữ,20,Nintendo,Miễn phí,Một người
+New Super Mario Bros. Wii,Wii,2009,Platform,Nintendo,4,Nữ,18,Nintendo,Miễn phí,Một người
+Duck Hunt,NES,1984,Bắn súng,Nintendo,,Nam,20,,Miễn phí,Một người
+Nintendogs,DS,2005,Mô phỏng,Nintendo,,Nữ,19,,Miễn phí,Một người
+Mario Kart DS,DS,2005,Đua xe,Nintendo,4,Nam,19,Nintendo,Miễn phí,Một người
+Pokemon Gold/Pokemon Silver,GB,1999,Nhập vai,Nintendo,,Nam,23,,Miễn phí,Một người
+Wii Fit,Wii,2007,Thể thao,Nintendo,4,Nam,20,Nintendo,Miễn phí,Một người
+Kinect Adventures!,X360,2010,Misc,Microsoft Game Studios,4,Nữ,26,Good Science Studio,Miễn phí,Một người
+Wii Fit Plus,Wii,2009,Thể thao,Nintendo,4,Nam,22,Nintendo,Miễn phí,Một người
+Grand Theft Auto V,PS3,2013,Hành động,Take-Two Interactive,3,Nam,27,Rockstar North,Miễn phí,Đồng đội nhiều người
+Grand Theft Auto: San Andreas,PS2,2004,Hành động,Take-Two Interactive,3,Nam,24,Rockstar North,Miễn phí,Một người
+Super Mario World,SNES,1990,Platform,Nintendo,,Nữ,20,,Miễn phí,Một người
+Brain Age: Train Your Brain in Minutes a Day,DS,2005,Misc,Nintendo,4,Nam,20,Nintendo,Miễn phí,Một người
+Pokemon Diamond/Pokemon Pearl,DS,2006,Nhập vai,Nintendo,,Nam,22,,Miễn phí,Một người
+Super Mario Land,GB,1989,Platform,Nintendo,,Nữ,21,,Miễn phí,Một người
+Super Mario Bros. 3,NES,1988,Platform,Nintendo,,Nữ,17,,Miễn phí,Một người
+Grand Theft Auto V,X360,2013,Hành động,Take-Two Interactive,3,Nam,23,Rockstar North,Miễn phí,Đồng đội 2 người
+Grand Theft Auto: Vice City,PS2,2002,Hành động,Take-Two Interactive,3,Nam,24,Rockstar North,Miễn phí,Đồng đội 2 người
+Pokemon Ruby/Pokemon Sapphire,GBA,2002,Nhập vai,Nintendo,,Nam,21,,Miễn phí,Một người
+Brain Age 2: More Training in Minutes a Day,DS,2005,Giải đố,Nintendo,4,Nữ,24,Nintendo,Miễn phí,Một người
+Pokemon Black/Pokemon White,DS,2010,Nhập vai,Nintendo,,Nữ,22,,Miễn phí,Một người
+Gran Turismo 3: A-Spec,PS2,2001,Đua xe,Sony Computer Entertainment,4,Nam,Polyphony Digital,Miễn phí,Một người
+Call of Duty: Modern Warfare 3,X360,2011,Bắn súng,Activision,3,Nam,24, Sledgehammer Games",Miễn phí,Một người
+Pokémon Yellow: Special Pikachu Edition,GB,1998,Nhập vai,Nintendo,,Nam,21,,Miễn phí,Một người
+Call of Duty: Black Ops 3,PS4,2015,Bắn súng,Activision,,Nam,20,,Miễn phí,Một người
+Call of Duty: Black Ops,X360,2010,Bắn súng,Activision,3,Nam,27,Treyarch,Miễn phí,Một người
+Pokemon X/Pokemon Y,3DS,2013,Nhập vai,Nintendo,,Nữ,18,,Miễn phí,Một người
+Call of Duty: Black Ops II,PS3,2012,Bắn súng,Activision,3,Nam,23,Treyarch,Miễn phí,Một người
+Call of Duty: Black Ops II,X360,2012,Bắn súng,Activision,3,Nam,22,Treyarc,Miễn phí,Một người
+Call of Duty: Modern Warfare 2,X360,2009,Bắn súng,Activision,3,Nam,22,Infinity War,Miễn phí,Một người
+Call of Duty: Modern Warfare 3,PS3,2011,Bắn súng,Activision,3,Nam,24, Sledgehammer Games,Miễn phí,Một người
+Grand Theft Auto III,PS2,2001,Hành động,Take-Two Interactive,3,Nam,21,DMA Desig,Miễn phí,Đồng đội nhiều người
+Super Smash Bros. Brawl,Wii,2008,Đối kháng,Nintendo,2,Nam,25,Game Arts,Miễn phí,Đồng đội 2 người
+Mario Kart 7,3DS,2011,Đua xe,Nintendo,4,Nam,18, Entertainment Analysis & Development Division",Miễn phí,Một người
+Call of Duty: Black Ops,PS3,2010,Bắn súng,Activision,3,Nam,19,Treyarc,Miễn phí,Một người
+Grand Theft Auto V,PS4,2014,Hành động,Take-Two Interactive,3,Nam,20,Rockstar Nort,Miễn phí,Đồng đội nhiều người
+Animal Crossing: Wild World,DS,2005,Mô phỏng,Nintendo,4,Nữ,18,Nintendo,Miễn phí,Một người
+Halo 3,X360,2007,Bắn súng,Microsoft Game Studios,3,Nữ,20, Bungie,Miễn phí,Một người
+Super Mario 64,N64,1996,Platform,Nintendo,,Nữ,21,,Miễn phí,Một người
+Pokemon HeartGold/Pokemon SoulSilver,DS,2009,Hành động,Nintendo,,Nam,24,,Miễn phí,Một người
+Pokemon Omega Ruby/Pokemon Alpha Sapphire,3DS,2014,Nhập vai,Nintendo,,Nữ,21,,Miễn phí,Một người
+Gran Turismo 4,PS2,2004,Đua xe,Sony Computer Entertainment,4,Nam,19,Polyphony Digital,Miễn phí,Một người
+Super Mario Galaxy,Wii,2007,Platform,Nintendo,4,Nữ,20,Nintendo,Miễn phí,Một người
+Super Mario Land 2: 6 Golden Coins,GB,1992,Phiêu lưu,Nintendo,,Nam,18,
+Grand Theft Auto IV,X360,2008,Hành động,Take-Two Interactive,3,Nam,20,Rockstar Nort,Miễn phí,Một người
+Gran Turismo,PS,1997,Đua xe,Sony Computer Entertainment,4,Nam,20,Polyphony Digital,Miễn phí,Một người
+Super Mario 3D Land,3DS,2011,Platform,Nintendo,4,Nữ,19,Nintendo,Miễn phí,Một người
+Gran Turismo 5,PS3,2010,Đua xe,Sony Computer Entertainment,4,Nam,19,Polyphony Digital,Miễn phí,,Đồng đội 2 người
+Call of Duty: Modern Warfare 2,PS3,2009,Bắn súng,Activision,3,Nam,20,Infinity War,Miễn phí,Một người
+Super Mario All-Stars,SNES,1993,Platform,Nintendo,,Nữ,23,,Miễn phí,Đồng đội 2 người
+Grand Theft Auto IV,PS3,2008,Hành động,Take-Two Interactive,3,Nam,24,Rockstar Nort,Miễn phí,Một người
+Pokemon FireRed/Pokemon LeafGreen,GBA,2004,Nhập vai,Nintendo,,Nữ,21,,Miễn phí,Một người
+Super Mario 64,DS,2004,Platform,Nintendo,,Nữ,22,,Miễn phí,Đồng đội 2 người
+Call of Duty: Ghosts,X360,2013,Bắn súng,Activision,3,Nam,25,Infinity War,Miễn phí,Một người
+Just Dance 3,Wii,2011,Misc,Ubisoft,5,Nữ,18,Ubisoft,Miễn phí,Một người
+New Super Mario Bros. 2,3DS,2012,Platform,Nintendo,4,Nữ,20,Nintendo,Miễn phí,Đồng đội 2 người
+Mario Kart 64,N64,1996,Đua xe,Nintendo,,Nam,20,,Miễn phí,,Đồng đội 2 người
+Halo: Reach,X360,2010,Bắn súng,Microsoft Game Studios,3,Nam,23,Bungi,Miễn phí,Một người
+Final Fantasy VII,PS,1997,Nhập vai,Sony Computer Entertainment,2,Nữ,25,SquareSoft,Miễn phí,Một người
+Halo 4,X360,2012,Bắn súng,Microsoft Game Studios,3,Nam,22,343 Industrie,Miễn phí,Một người
+Gran Turismo 2,PS,1999,Đua xe,Sony Computer Entertainment,2,Nam,25,Polyphony Digital,Miễn phí,,Đồng đội 2 người
+Just Dance 2,Wii,2010,Misc,Ubisoft,5,Nữ,20,Ubisoft,Miễn phí,Một người
+Call of Duty: Ghosts,PS3,2013,Bắn súng,Activision,3,Nam,23,Infinity War,Miễn phí,Một người
+Call of Duty 4: Modern Warfare,X360,2007,Bắn súng,Activision,3,Nam,21,Infinity War,Miễn phí,Đồng đội 2 người
+Donkey Kong Country,SNES,1994,Platform,Nintendo,,Nữ,20,,Miễn phí,Đồng đội 2 người
+Minecraft,X360,2013,Misc,Microsoft Game Studios,,Nữ,20,,Miễn phí,Một người
+Animal Crossing: New Leaf,3DS,2012,Mô phỏng,Nintendo,4,Nữ,22,Nintendo,Miễn phí,Một người
+Mario Party DS,DS,2007,Misc,Nintendo,4,Nữ,20,Hudson Soft,Miễn phí,Một người
+The Elder Scrolls V: Skyrim,X360,2011,Nhập vai,Bethesda Softworks,3,Nam,27,Bethesda Game Studio,Miễn phí,Một người
+Super Mario Kart,SNES,1992,Đua xe,Nintendo,,Nam,20,,Miễn phí,,Đồng đội 2 người
+FIFA 16,PS4,2015,Thể thao,Electronic Arts,4,Nam,22,EA Sports,Miễn phí,Một người
+Halo 2,XB,2004,Bắn súng,Microsoft Game Studios,3,Nam,23,Bungie Softwar,Miễn phí,Đồng đội 2 người
+Wii Party,Wii,2010,Misc,Nintendo,4,Nữ,24,Nd Cube,Miễn phí,Một người
+Mario Party 8,Wii,2007,Misc,Nintendo,4,Nữ,21,Hudson,Miễn phí,Một người
+FIFA Soccer 13,PS3,2012,Hành động,Electronic Arts,4,Nam,23,Electronic Arts,Miễn phí,Đồng đội 2 người
+GoldenEye 007,N64,1997,Bắn súng,Nintendo,,Nam,20,,Miễn phí,Đồng đội 2 người
+Pokemon Black 2/Pokemon White 2,DS,2012,Nhập vai,Nintendo,,Nữ,20,,Miễn phí,Đồng đội nhiều người
+Final Fantasy X,PS2,2001,Nhập vai,Sony Computer Entertainment,2,Nam,24,SquareSoft,Miễn phí,Đồng đội nhiều người
+The Sims 3,PC,2009,Mô phỏng,Electronic Arts,2,Nữ,20,The Sims Studio,Miễn phí,Đồng đội 2 người
+Mario & Sonic at the Olympic Games,Wii,2007,Thể thao,Sega,,Nam,20,,Miễn phí,Một người
+Star Wars Battlefront (2015),PS4,2015,Bắn súng,Electronic Arts,,Nam,20,,Miễn phí,Đồng đội 2 người
+Final Fantasy VIII,PS,1999,Nhập vai,SquareSoft,2,Nữ,23,SquareSoft,Miễn phí,Đồng đội nhiều người
+Pac-Man,2600,1982,Giải đố,Atari,,Nữ,20,,Mất phí,Một người
+Pokémon Platinum Version,DS,2008,Nhập vai,Nintendo,4,Nam,20,Game Freak,Miễn phí,Đồng đội nhiều người
+Grand Theft Auto: Liberty City Stories,PSP,2005,Hành động,Take-Two Interactive,3,Nam,21,Rockstar Leed,Miễn phí,Đồng đội 2 người
+Call of Duty: Advanced Warfare,PS4,2014,Bắn súng,Activision,3,Nam,20,Sledgehammer Game,Miễn phí,Đồng đội 2 người
+The Legend of Zelda: Ocarina of Time,N64,1998,Hành động,Nintendo,,Nam,20,,Miễn phí,Đồng đội 2 người
+FIFA 17,PS4,2016,Thể thao,Electronic Arts,4,Nam,19, EA Vancouver",Miễn phí,Một người
+Crash Bandicoot 2: Cortex Strikes Back,PS,1997,Platform,Sony Computer Entertainment,,Nữ,20,,Miễn phí,Đồng đội 2 người
+Super Smash Bros. for Wii U and 3DS,3DS,2014,Đối kháng,Nintendo,,Nữ,20,,Miễn phí,Đồng đội 2 người
+Super Mario Galaxy 2,Wii,2010,Platform,Nintendo,4,Nữ,20,Nintendo EAD Tokyo,Miễn phí,Đồng đội 2 người
+Super Mario Bros. 2,NES,1988,Platform,Nintendo,,Nữ,20,,Miễn phí,Đồng đội 2 người
+Call of Duty: Black Ops 3,XOne,2015,Bắn súng,Activision,,Nam,20,,Miễn phí,Đồng đội 2 người
+Call of Duty: World at War,X360,2008,Bắn súng,Activision,3,Nam,23,Treyarc,Miễn phí,Đồng đội 2 người
+Battlefield 3,X360,2011,Bắn súng,Electronic Arts,3,Nam,20,EA DIC,Miễn phí,Đồng đội 2 người
+Need for Speed Underground,PS2,2003,Đua xe,Electronic Arts,4,Nam,21,EA Black Box,Miễn phí,,Đồng đội 2 người
+Just Dance,Wii,2009,Misc,Ubisoft,5,Nữ,19,Ubisoft Paris,Miễn phí,Đồng đội 2 người
+Battlefield 3,PS3,2011,Bắn súng,Electronic Arts,3,Nam,23,EA DIC,Miễn phí,Đồng đội 2 người
+Fallout 4,PS4,2015,Nhập vai,Bethesda Softworks,3,Nam,24,Bethesda Game Studio,Miễn phí,Đồng đội nhiều người
+Tekken 3,PS,1998,Đối kháng,Sony Computer Entertainment,2,Nam,25,Namco,Miễn phí,Đồng đội 2 người
+The Legend of Zelda: Twilight Princess,Wii,2006,Hành động,Nintendo,2,Nam,26,Nintendo,Miễn phí,Đồng đội 2 người
+Pokemon Sun/Moon,3DS,2016,Nhập vai,Nintendo,,Nữ,20,,Mất phí,Đồng đội nhiều người
+Crash Bandicoot 3: Warped,PS,1998,Platform,Sony Computer Entertainment,4,Nữ,27,Naughty Dog,Miễn phí,Đồng đội 2 người
+Mario Kart 8,WiiU,2014,Đua xe,Nintendo,4,Nam,18,Nintendo,Đồng đội 2 người
+Super Smash Bros. Melee,GC,2001,Đối kháng,Nintendo,2,Nữ,21,HAL Labs,Miễn phí,Đồng đội 2 người
+Mario Kart: Double Dash!!,GC,2003,Đua xe,Nintendo,,Nam,20,,Đồng đội 2 người
+Need for Speed Underground 2,PS2,2004,Đua xe,Electronic Arts,4,Nam,23,EA Canada,Đồng đội 2 người
+Medal of Honor: Frontline,PS2,2002,Bắn súng,Electronic Arts,2,Nam,22,EA LA,Miễn phí,Đồng đội 2 người
+Crash Bandicoot,PS,1996,Platform,Sony Computer Entertainment,,Nữ,20,,Miễn phí,Đồng đội 2 người
+Just Dance 4,Wii,2012,Misc,Ubisoft,5,Nữ,20,Ubisoft,Miễn phí,Đồng đội 2 người
+Gears of War 2,X360,2008,Bắn súng,Microsoft Game Studios,3,Nam,21,Epic Game,Miễn phí,Đồng đội 2 người
+Uncharted 3: Drake's Deception,PS3,2011,Hành động,Sony Computer Entertainment,2,Nam,20,Naughty Dog,Miễn phí,Đồng đội 2 người
+Zumba Fitness,Wii,2010,Thể thao,505 Games,4,Nam,20, Inc.",Miễn phí,Đồng đội 2 người
+Call of Duty 4: Modern Warfare,PS3,2007,Bắn súng,Activision,3,Nam,21,Infinity War,Miễn phí,Đồng đội 2 người
+Uncharted 2: Among Thieves,PS3,2009,Hành động,Sony Computer Entertainment,2,Nam,23,Naughty Dog,Miễn phí,Đồng đội 2 người
+FIFA 12,PS3,2011,Thể thao,Electronic Arts,,Nam,20,,Miễn phí,Đồng đội 2 người
+Big Brain Academy,DS,2005,Misc,Nintendo,4,Nữ,24,Nintendo,Miễn phí,Đồng đội 2 người
+The Legend of Zelda,NES,1986,Hành động,Nintendo,,Nam,20,,Miễn phí,Đồng đội 2 người
+Red Dead Redemption,PS3,2010,Hành động,Take-Two Interactive,3,Nam,24,Rockstar San Dieg,Miễn phí,Đồng đội nhiều người
+FIFA 14,PS3,2013,Thể thao,Electronic Arts,4,Nam,22,EA Canada,Miễn phí,Đồng đội 2 người
+Assassin's Creed III,PS3,2012,Hành động,Ubisoft,3,Nam,21,Ubisof,Miễn phí,Đồng đội nhiều người
+Donkey Kong Country Returns,Wii,2010,Platform,Nintendo,4,Nữ,23,Retro Studios,Miễn phí,Đồng đội 2 người
+Halo: Combat Evolved,XB,2001,Bắn súng,Microsoft Game Studios,3,Nam,24,Bungie Softwar,Miễn phí,Đồng đội 2 người
+The Elder Scrolls V: Skyrim,PS3,2011,Nhập vai,Bethesda Softworks,3,Nữ,21,Bethesda Game Studio,Mất phí,Đồng đội nhiều người
+Pokémon Emerald Version,GBA,2004,Nhập vai,Nintendo,4,Nữ,20,Game Freak,Mất phí,Đồng đội nhiều người
+Kingdom Hearts,PS2,2002,Nhập vai,Sony Computer Entertainment,4,Nữ,21,SquareSoft,Mất phí,Đồng đội nhiều người
+Pokémon Crystal Version,GB,2000,Nhập vai,Nintendo,,Nữ,20,,Mất phí,Đồng đội nhiều người
+Halo 3: ODST,X360,2009,Bắn súng,Microsoft Game Studios,3,Nam,22, Bungie,Miễn phí,Đồng đội 2 người
+Red Dead Redemption,X360,2010,Hành động,Take-Two Interactive,3,Nam,22,Rockstar San Dieg,Miễn phí,Đồng đội nhiều người
+Super Mario Sunshine,GC,2002,Platform,Nintendo,4,Nữ,19,Nintendo,Miễn phí,Đồng đội 2 người
+Street Fighter II: The World Warrior,SNES,1992,Đối kháng,Capcom,,Nữ,20,,Miễn phí,Đồng đội 2 người
+World of Warcraft,PC,2004,Nhập vai,Activision,2,Nam,24,Blizzard Entertainment,Mất phí,Đồng đội nhiều người
+Driver,PS,1999,Hành động,GT Interactive,2,Nam,22,Reflections Interactive,Mất phí,Một người
+Gears of War 3,X360,2011,Bắn súng,Microsoft Game Studios,3,Nam,21,Epic Game,Mất phí,Đồng đội 2 người
+Kinect Sports,X360,2010,Thể thao,Microsoft Game Studios,5,Nam,22,Rare Ltd.,Miễn phí,Đồng đội 2 người
+Gears of War,X360,2006,Bắn súng,Microsoft Game Studios,3,Nam,24,Epic Games,Mất phí,Đồng đội 2 người
+FIFA 15,PS4,2014,Thể thao,Electronic Arts,4,Nam,20,EA Sports,Miễn phí,Đồng đội 2 người
+Metal Gear Solid 2: Sons of Liberty,PS2,2001,Hành động,Konami Digital Entertainment,3,Nam,19,KCEJ,Mất phí,Một người
+Sonic the Hedgehog 2,GEN,1992,Platform,Sega,,Nữ,19,,Miễn phí,Đồng đội 2 người
+Metal Gear Solid,PS,1998,Hành động,Konami Digital Entertainment,3,Nam,18,KCEJ,Mất phí,Một người
+Metal Gear Solid 4: Guns of the Patriots,PS3,2008,Hành động,Konami Digital Entertainment,3,Nam,18,Kojima Productions,Mất phí,Một người
+Final Fantasy XII,PS2,2006,Nhập vai,Square Enix,2,Nam,20,Square Enix,Mất phí,Đồng đội nhiều người
+The Last of Us,PS3,2013,Hành động,Sony Computer Entertainment Europe,3,Nam,19,Naughty Dog,Mất phí,Một người
+LittleBigPlanet,PS3,2008,Platform,Sony Computer Entertainment,4,Nữ,19, Media Molecule",Miễn phí,Đồng đội 2 người
+Resident Evil 2,PS,1998,Hành động,Virgin Interactive,3,Nam,18,Capcom,Mất phí,Một người
+Dragon Quest IX: Sentinels of the Starry Skies,DS,2009,Nhập vai,Nintendo,5,Nam,18,Level 5,Mất phí,Đồng đội nhiều người
+Pitfall!,2600,1981,Platform,Activision,,Nữ,19,,Miễn phí,Đồng đội nhiều người
+Madden NFL 07,PS2,2006,Thể thao,Electronic Arts,4,Nam,23,EA Sports,Miễn phí,Đồng đội 2 người
+Halo 5: Guardians,XOne,2015,Bắn súng,Microsoft Game Studios,2,Nam,21,343 Industries,Mất phí,Đồng đội 2 người
+Spider-Man: The Movie,PS2,2002,Hành động,Activision,4,Nam,20,Treyarch,,Mất phí,Đồng đội 2 người
+Dragon Quest VII: Warriors of Eden,PS,2000,Nhập vai,Enix Corporation,,Nam,19,,Mất phí,Đồng đội nhiều người
+Call of Duty: Infinite Warfare,PS4,2016,Bắn súng,Activision,3,Nam,19,Infinity Ward,Mất phí,Đồng đội nhiều người
+God of War,PS2,2005,Hành động,Sony Computer Entertainment,3,Nam,23,SCE Santa Monica,Mất phí,Đồng đội 2 người
+Splatoon,WiiU,2015,Bắn súng,Nintendo,4,Nam,21,tendo,Mất phí,Đồng đội nhiều người
+Nintendo Land,WiiU,2012,Misc,Nintendo,4,Nữ,20,tendo,Miễn phí,Đồng đội 2 người
+Tony Hawk's Pro Skater 3,PS2,2001,Thể thao,Activision,2,Nam,23,Neversoft Entertainment,Mất phí,Đồng đội 2 người
+Winning Eleven: Pro Evolution Soccer 2007,PS2,2006,Thể thao,Konami Digital Entertainment,4,Nam,19,Konami,Mất phí,Đồng đội 2 người
+The Elder Scrolls IV: Oblivion,X360,2006,Nhập vai,Take-Two Interactive,3,Nữ,22,Bethesda Softworks,Mất phí,Đồng đội nhiều người
+Zelda II: The Adventure of Link,NES,1987,Phiêu lưu,Nintendo,,Nam,19,
+Need for Speed: Most Wanted,PS2,2005,Đua xe,Electronic Arts,2,Nam,20,EA Canada,Đồng đội 2 người
+Michael Jackson: The Experience,Wii,2010,Misc,Ubisoft,5,Nữ,18, Ubisoft Montpellier",Miễn phí,Đồng đội 2 người
+Call of Duty: Advanced Warfare,PS3,2014,Bắn súng,Activision,3,Nam,25,High Moon Studios,Mất phí,Đồng đội nhiều người
+Resistance: Fall of Man,PS3,2006,Bắn súng,Sony Computer Entertainment,3,Nam,26,Insomniac Games,Mất phí,Đồng đội nhiều người
+Sonic the Hedgehog,GEN,1991,Platform,Sega,,Nữ,19,,Miễn phí,Đồng đội nhiều người
+Kingdom Hearts II,PS2,2005,Nhập vai,Square Enix,5,Nam,19,Square Enix,Mất phí,Đồng đội nhiều người
+The Legend of Zelda: Ocarina of Time,3DS,2011,Hành động,Nintendo,,Nam,19,,Mất phí,Đồng đội 2 người
+Super Mario 3D World,WiiU,2013,Platform,Nintendo,4,Nữ,19,Nintendo,Miễn phí,Đồng đội nhiều người
+Minecraft,PS4,2014,Misc,Sony Computer Entertainment Europe,,Nữ,19,,Mất phí,Đồng đội 2 người
+Asteroids,2600,1980,Bắn súng,Atari,,Nam,19,,Mất phí,Đồng đội nhiều người
+Call of Duty: Advanced Warfare,X360,2014,Bắn súng,Activision,3,Nam,20,High Moon Studios,Mất phí,Đồng đội nhiều người
+FIFA 15,PS3,2014,Thể thao,Electronic Arts,4,Nam,21,EA Sports,Mất phí,Đồng đội 2 người
+Fable II,X360,2008,Nhập vai,Microsoft Game Studios,3,Nữ,23,Lionhead Studios,Mất phí,Đồng đội nhiều người
+Namco Museum,GBA,2001,Misc,Namco Bandai Games,4,Nữ,21,Mass Media,Mất phí,Đồng đội 2 người
+Batman: Arkham Asylum,PS3,2009,Hành động,Eidos Interactive,2,Nam,19,Rocksteady Studios,Mất phí,Đồng đội 2 người
+Metal Gear Solid 3: Snake Eater,PS2,2004,Hành động,Konami Digital Entertainment,3,Nam,22,KCEJ,Mất phí,Đồng đội 2 người
+Assassin's Creed: Revelations,PS3,2011,Hành động,Ubisoft,3,Nam,22,Ubisoft Montreal,Mất phí,Đồng đội 2 người
+Fallout 4,XOne,2015,Nhập vai,Bethesda Softworks,3,Nữ,24,Bethesda Game Studios,Mất phí,Đồng đội nhiều người
+FIFA 14,X360,2013,Thể thao,Electronic Arts,4,Nam,25,EA Canada,Mất phí,Đồng đội 2 người
+Daxter,PSP,2006,Platform,Sony Computer Entertainment,5,Nữ,18,Ready at Dawn,Mất phí,Đồng đội nhiều người
+Warcraft II: Tides of Darkness,PC,1995,Chiến lược,Activision,,Nam,19,,Miễn phí,Một người
+FIFA Soccer 06,PS2,2005,Thể thao,Electronic Arts,4,Nam,19,EA Canada,Mất phí,Đồng đội 2 người
+EyeToy Play,PS2,2003,Misc,Sony Computer Entertainment,4,Nữ,18, Zoe Mode",Mất phí,Đồng đội 2 người
+Gran Turismo 5 Prologue,PS3,2007,Đua xe,Sony Computer Entertainment,4,Nam,20,Polyphony Digital,Đồng đội nhiều người
+Assassin's Creed: Revelations,X360,2011,Hành động,Ubisoft,3,Nam,20,Ubisoft Montreal,Mất phí,Đồng đội 2 người
+FIFA 12,X360,2011,Thể thao,Electronic Arts,,Nam,19,,Mất phí,Đồng đội 2 người
+Teenage Mutant Ninja Turtles,NES,1989,Hành động,Palcom,,Nam,19,,Mất phí,Đồng đội 2 người
+Street Fighter IV,PS3,2009,Đối kháng,Capcom,4,Nữ,23,Capcom,Mất phí,Đồng đội 2 người
+Excitebike,NES,1984,Đua xe,Nintendo,,Nam,19,,Đồng đội nhiều người
+Frogger,PS,1997,Hành động,Hasbro Interactive,,Nam,19,,Mất phí,Đồng đội 2 người
+Madden NFL 2003,PS2,2002,Thể thao,Electronic Arts,4,Nam,18,EA Sports,Mất phí,Đồng đội 2 người
+Half-Life,PC,1997,Bắn súng,Vivendi Games,3,Nam,20,Valve Software,Mất phí,Đồng đội nhiều người
+Super Mario World 2: Yoshi's Island,SNES,1995,Platform,Nintendo,,Nữ,19,,Mất phí,Đồng đội nhiều người
+FIFA Soccer 07,PS2,2006,Thể thao,Electronic Arts,,Nam,19,,Mất phí,Đồng đội 2 người
+Street Fighter II Turbo,SNES,1992,Đối kháng,Capcom,,Nam,19,,Mất phí,Đồng đội 2 người
+World of Warcraft: The Burning Crusade,PC,2007,Nhập vai,Activision,2,Nam,22,Blizzard Entertainment,Mất phí,Đồng đội nhiều người
+Battlefield 1,PS4,2016,Bắn súng,Electronic Arts,3,Nam,21,EA DICE,Mất phí,Đồng đội nhiều người
+God of War II,PS2,2007,Hành động,Sony Computer Entertainment,3,Nam,19,SCE Santa Monica,Mất phí,Đồng đội 2 người
+World Soccer Winning Eleven 9,PS2,2005,Thể thao,Konami Digital Entertainment,4,Nam,3,Konami,Mất phí,Đồng đội nhiều người
+Fallout: New Vegas,X360,2010,Nhập vai,Bethesda Softworks,3,Nữ,24,Obsidian Entertainment,Mất phí,Đồng đội nhiều người
+Forza Motorsport 2,X360,2007,Đua xe,Microsoft Game Studios,4,Nam,24,Turn 10,Đồng đội nhiều người
+Carnival Games,Wii,2007,Misc,Take-Two Interactive,4,Nữ,26,Cat Daddy Games,Mất phí,Đồng đội nhiều người
+Watch Dogs,PS4,2014,Hành động,Ubisoft,3,Nam,23,Ubisoft Montreal,Mất phí,Đồng đội 2 người
+Namco Museum Vol.3,PS,1996,Misc,Sony Computer Entertainment,,Nữ,19,,Mất phí,Đồng đội nhiều người
+Tekken Tag Tournament,PS2,2000,Đối kháng,Namco Bandai Games,2,Nữ,21,Namco,Mất phí,Đồng đội 2 người
+Far Cry 4,PS4,2014,Bắn súng,Ubisoft,3,Nam,24,Ubisoft Montreal,Mất phí,Đồng đội nhiều người
+Star Fox 64,N64,1997,Bắn súng,Nintendo,,Nam,19,,Mất phí,Đồng đội nhiều người
+Golf,NES,1984,Thể thao,Nintendo,,Nam,19,,Mất phí,Đồng đội nhiều người
+Namco Museum: 50th Anniversary,PS2,2005,Misc,Namco Bandai Games,5,Nữ,19,Digital Eclipse,Mất phí,Đồng đội nhiều người
+Left 4 Dead 2,X360,2009,Bắn súng,Electronic Arts,3,Nam,24,Valve Software,Mất phí,Đồng đội nhiều người
+The Witcher 3: Wild Hunt,PS4,2015,Nhập vai,Namco Bandai Games,3,Nam,19,CD Projekt Red Studio,Mất phí,Đồng đội nhiều người
+Assassin's Creed: Unity,PS4,2014,Hành động,Ubisoft,3,Nam,19, Ubisoft Montreal",Mất phí,Đồng đội 2 người
+Batman: Arkham Knight,PS4,2015,Hành động,Warner Bros. Interactive Entertainment,3,Nam,20,Rocksteady Studios,Mất phí,Đồng đội 2 người
+The Legend of Zelda: Skyward Sword,Wii,2011,Hành động,Nintendo,4,Nam,23,tendo,Mất phí,Đồng đội 2 người
+Fallout 3,PS3,2008,Nhập vai,Bethesda Softworks,3,Nam,25,Bethesda Game Studios,Mất phí,Đồng đội nhiều người
+Professor Layton and the Diabolical Box,DS,2007,Giải đố,Nintendo,5,Nữ,20,Level 5,Mất phí,Một người
+Donkey Kong Land,GB,1994,Platform,Nintendo,,Nữ,19,,Mất phí,Đồng đội nhiều người
+EA Sports Active,Wii,2009,Thể thao,Electronic Arts,4,Nam,21,EA Canada,Mất phí,Đồng đội nhiều người
+Tony Hawk's Underground,PS2,2003,Thể thao,Activision,2,Nam,23,Neversoft Entertainment,Mất phí,Đồng đội nhiều người
+Monster Hunter 4 Ultimate,3DS,2014,Nhập vai,Nintendo,2,Nữ,22,Capcom,Mất phí,Đồng đội nhiều người
+The Elder Scrolls V: Skyrim,PC,2011,Nhập vai,Bethesda Softworks,3,Nam,19,Bethesda Game Studios,Mất phí,Đồng đội nhiều người
+NBA 2K16,PS4,2015,Thể thao,Take-Two Interactive,5,Nam,20,Visual Concepts,Mất phí,Đồng đội nhiều người
+Tekken 5,PS2,2005,Đối kháng,Namco Bandai Games,2,Nam,22,Namco,Mất phí,Đồng đội 2 người
+Dragon Warrior III,NES,1988,Nhập vai,Enix Corporation,,Nam,19,,Mất phí,Đồng đội nhiều người
+MotorStorm,PS3,2006,Đua xe,Sony Computer Entertainment,2,Nam,26,Evolution Studios,Đồng đội nhiều người
+Nintendogs + cats,3DS,2011,Mô phỏng,Nintendo,,Nữ,19,,Mất phí,Đồng đội 2 người
+World Soccer Winning Eleven 8 International,PS2,2004,Thể thao,Konami Digital Entertainment,4,Nam,23,KCET,Mất phí,Đồng đội nhiều người
+Sports Champions,PS3,2010,Thể thao,Sony Computer Entertainment,5,Nam,21, Zindagi Games",Mất phí,Đồng đội nhiều người
+Namco Museum Vol.1,PS,1995,Misc,Sony Computer Entertainment,,Nữ,19,,Mất phí,Đồng đội nhiều người
+The Legend of Zelda: Link's Awakening,GB,1992,Hành động,Nintendo,,Nam,19,,Mất phí,Đồng đội nhiều người
+Call of Duty: Ghosts,PS4,2013,Bắn súng,Activision,3,Nam,21,Infinity Ward,Mất phí,Đồng đội nhiều người
+Flash Focus: Vision Training in Minutes a Day,DS,2007,Misc,Nintendo,4,Nữ,23, Namco Bandai Games",Mất phí,Đồng đội nhiều người
+Tom Clancy's The Division,PS4,2016,Bắn súng,Ubisoft,3,Nam,21,Massive Entertainment,Mất phí,Đồng đội nhiều người
+Big Brain Academy: Wii Degree,Wii,2007,Misc,Nintendo,4,Nữ,21,Nintendo,Mất phí,Đồng đội nhiều người
+Resident Evil Director's Cut,PS,1996,Hành động,Virgin Interactive,,Nam,19,,Mất phí,Đồng đội nhiều người
+Mario & Luigi: Bowser's Inside Story,DS,2009,Nhập vai,Nintendo,,Nam,19,,Mất phí,Đồng đội nhiều người
+LEGO Indiana Jones: The Original Adventures,X360,2008,Hành động,Activision,5,Nam,20,Traveller's Tales,Mất phí,Đồng đội nhiều người
+The Sims: Unleashed,PC,2002,Mô phỏng,Electronic Arts,2,Nữ,23,Maxis,Mất phí,Đồng đội 2 người
+Ratchet & Clank: Size Matters,PSP,2007,Platform,Sony Computer Entertainment,,Nữ,19,,Mất phí,Đồng đội nhiều người
+Harry Potter and the Sorcerer's Stone,PS,2001,Hành động,Electronic Arts,4,Nam,21,Argonaut Games,Mất phí,Đồng đội nhiều người
+Mario & Sonic at the London 2012 Olympic Games,Wii,2011,Thể thao,Sega,,Nam,19,,Mất phí,Đồng đội nhiều người
+Resident Evil 3: Nemesis,PS,1999,Hành động,Eidos Interactive,,Nam,19,,Mất phí,Đồng đội nhiều người
+Super Paper Mario,Wii,2007,Platform,Nintendo,4,Nữ,22,Intelligent Systems,Mất phí,Một người
+Spyro: Year of the Dragon,PS,2000,Platform,Sony Computer Entertainment,4,Nữ,24,Insomniac Games,Mất phí,Một người
+Assassin's Creed IV: Black Flag,PS3,2013,Hành động,Ubisoft,3,Nam,23,Ubisoft,Mất phí,Đồng đội nhiều người
+FIFA Soccer 2005,PS2,2004,Thể thao,Electronic Arts,4,Nam,21,EA Canada,Mất phí,Đồng đội nhiều người
+Pokémon Trading Card Game,GB,1998,Chiến lược,Nintendo,,Nam,19,,Miễn phí,Một người
+Friend Collection,DS,2009,Misc,Nintendo,,Nữ,19,,Mất phí,Đồng đội nhiều người
+Tony Hawk's Pro Skater 4,PS2,2002,Thể thao,Activision,2,Nam,24,Neversoft Entertainment,Mất phí,Đồng đội nhiều người
+Star Wars Battlefront (2015),XOne,2015,Bắn súng,Electronic Arts,,Nam,19,,Mất phí,Đồng đội nhiều người
