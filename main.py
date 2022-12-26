@@ -1,8 +1,7 @@
 import os
 import time
 from time import sleep
-from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, HORIZONTAL, Scale, filedialog
-from tkinter import ttk
+from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, filedialog, Radiobutton, ttk
 from Game import Game
 from ActionData import ActionData
 from Evaluation import Evaluation
@@ -87,7 +86,7 @@ if __name__ == '__main__':
     suggest_screen = Frame(window)
 
     # Thông tin trò chơi được đề xuất được đặt ở hàng thứ 0 và hàng đầu tiên cho người dùng
-    message = Label(search_screen, text='[Gợi ý game phù hợp]', font=('Microsoft YaHei', 18))
+    message = Label(search_screen, text='[Tìm kiếm game phù hợp]', font=('Microsoft YaHei', 18))
     result_window = Frame(search_screen, width=1024, height=180)
     # Giữ kích thước cửa sổ không thay đổi
     result_window.propagate(0)
@@ -127,17 +126,17 @@ if __name__ == '__main__':
     to_year_select.grid(row=4, column=3)
 
     # Giới tính, độ tuổi
-    genders = Label(search_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
+    # genders = Label(search_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
     ages = Label(search_screen, text='Tuổi', font=('tMicrosoft YaHei',12,'bold'))
-    genders_select = ttk.Combobox(search_screen)
+    # genders_select = ttk.Combobox(search_screen)
     ages_select = ttk.Combobox(search_screen)
-    genders.grid(row=5, column=0)
+    # genders.grid(row=5, column=0)
     ages.grid(row=5, column=2)
-    genders_select.grid(row=5, column=1)
+    # genders_select.grid(row=5, column=1)
     ages_select.grid(row=5, column=3)
 
     # Dòng thứ sáu, xác nhận để gửi các yêu cầu về chỉ số trò chơi đã chọn
-    submit_btn = Button(search_screen, text='Gửi đi', font=('Microsoft YaHei', 15), command=properties_filter)
+    submit_btn = Button(search_screen, text='Tìm kiếm', font=('Microsoft YaHei', 15), command=properties_filter)
     submit_btn.grid(row=6, column=2, ipadx=70, ipady=10, pady=10)
 
     # Cột ngoài cùng bên phải đặt danh sách Nhóm để chọn xếp hạng trò chơi
@@ -176,13 +175,13 @@ if __name__ == '__main__':
     genre_select['value'] = ['Tất cả thể loại'] + sorted(Game.Genre)
     from_year_select['value'] = list(Game.YearOfRelease)
     to_year_select['value'] = list(Game.YearOfRelease)
-    genders_select['value'] = ['Cả nam và nữ'] + sorted(Game.Gender)
+    # genders_select['value'] = ['Cả nam và nữ'] + sorted(Game.Gender)
     ages_select['value'] = sorted(Game.Age)
     platform_select.current(0)
     genre_select.current(0)
     from_year_select.current(0)
     to_year_select.current(len(Game.YearOfRelease) - 1)
-    genders_select.current(0)
+    # genders_select.current(0)
     ages_select.current(0)
 
     # Hiển thị màn hình tìm kiếm
@@ -190,15 +189,40 @@ if __name__ == '__main__':
 
 
     ########################################################################
+    # Thông tin trò chơi được đề xuất được đặt ở hàng thứ 0 và hàng đầu tiên cho người dùng
+    message_suggest = Label(suggest_screen, text='[Gợi ý game phù hợp]', font=('Microsoft YaHei', 18))
+    result_suggest = Frame(suggest_screen, width=1024, height=180)
+    # Giữ kích thước cửa sổ không thay đổi
+    result_suggest.propagate(0)
+    message_suggest.grid(row=0, columnspan=5)
+    result_suggest_message = Label(result_suggest, text='Chưa có nội dung được đề xuất')
+    result_suggest_message.pack()
+    result_suggest.grid(row=1, columnspan=5)
+
+    # Hàng thứ hai đặt nút, khi có nhiều thông tin được đề xuất, hãy sử dụng nút để chuyển
+    prev_suggest_btn = Button(suggest_screen, text='Trước', command=lambda:switch_property('prev'))
+    next_suggest_btn = Button(suggest_screen, text='Tiếp theo', command=lambda:switch_property('next'))
+    prev_suggest_btn.grid(row=2, column=3, sticky='e', ipadx=20, pady=30)
+    next_suggest_btn.grid(row=2, column=4, ipadx=20)
+
     # Di chuyển đến màn hình search
     search_btn = Button(suggest_screen, text='Tìm kiếm', command=lambda:switch_search_screen())
     search_btn.grid(row=0, column=0, sticky='e', ipadx=20, pady=30)
 
-    # Dòng thứ hai được sử dụng để chọn nghề nghiệp
+    # Dòng thứ tư được sử dụng để chọn nghề nghiệp
     job_label = Label(suggest_screen, text='Nghề nghiệp', font=('tMicrosoft YaHei',12,'bold'))
     job_select = ttk.Combobox(suggest_screen)
-    job_label.grid(row=2, column=0)
-    job_select.grid(row=2, column=1)
+    job_label.grid(row=4, column=0)
+    job_select.grid(row=4, column=1)
+
+    # Dòng thứ ba để chọn giới tính
+    radio = IntVar()  
+    gender_label = Label(suggest_screen, text='Giới tính', font=('tMicrosoft YaHei',12,'bold'))
+    gender_label.grid(row=5, column=0)
+    male_radio = Radiobutton(suggest_screen, text="Nam", variable=radio, value=1)
+    female_radio = Radiobutton(suggest_screen, text="Nữ", variable=radio, value=2)
+    male_radio.grid(row=5, column=1)
+    female_radio.grid(row=5, column=2)
 
 
     # Tải nội dung của menu thả xuống trên trang chủ theo dữ liệu
