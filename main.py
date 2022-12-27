@@ -82,7 +82,7 @@ def properties_filter_suggest():
     ActionData.properties.clear()
     
     args = {'jb': job_select.get(),
-            'gd': int(radio.get()),
+            'gd': int(radio.get()) or 0,
             'it': interes_select.get(),
             'pp': purpose_select.get(),
             'age': int(age_scale.get())
@@ -93,7 +93,6 @@ def properties_filter_suggest():
     for game in game_list:
         if evaluate.qualified(game):
             ActionData.properties.append(game)
-            print(ActionData.properties)
 
     # Kết quả lựa chọn thiết bị đầu cuối đáp ứng yêu cầu của người dùng
     print('【RESULT】', len(ActionData.properties))
@@ -282,7 +281,7 @@ if __name__ == '__main__':
     job_select['value'] = sorted(job_list)
     interes_select['value'] = sorted(interest_list)
     purpose_select['value'] = sorted(purpose_list)
-    radio.set(1)
+    # radio.set(1)
     job_select.current(0)
     interes_select.current(0)
     purpose_select.current(0)
