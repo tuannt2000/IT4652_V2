@@ -35,7 +35,7 @@ class Evaluation():
         elif self.interes == 'Nghệ thuật':
             result = ['Nhập vai', 'Mô phỏng', 'Âm nhạc', 'Thời trang']
         elif self.interes == 'Giao tiếp':
-            result = ['Đồng đội nhiều người']
+            result = ['Đồng đội nhiều người', 'Đồng đội 2 người']
         elif self.interes == 'Âm nhạc':
             result = ['Âm nhạc']
         elif self.interes == 'Thể thao':
@@ -57,11 +57,11 @@ class Evaluation():
         if self.purpose == "Tăng kỹ năng":
             result = ["Phiêu lưu", "Giải đố"]
         elif self.purpose == "Kết bạn":
-            result = ['Đồng đội nhiều người']
+            result = ['Đồng đội nhiều người', 'Đồng đội 2 người']
         elif self.purpose == "Học tập":
             result = ['Giải đố', 'Nấu ăn']
         elif self.purpose == "Giải trí":
-            result = ['Giải trí']
+            result = ['Hành động', 'Thời trang', 'Nhập vai', 'Phiêu lưu', 'Giải đố', 'Bắn súng', 'Đối kháng', 'Mô phỏng', 'Thể thao', 'Đua xe', 'Âm nhạc', 'Chiến thuật', 'Nấu ăn']
         return result
 
     # sử dụng luật đưa ra kết quả
