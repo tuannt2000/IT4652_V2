@@ -211,13 +211,11 @@ if __name__ == '__main__':
     genre_select['value'] = ['Tất cả thể loại'] + sorted(Game.Genre)
     from_year_select['value'] = list(Game.YearOfRelease)
     to_year_select['value'] = list(Game.YearOfRelease)
-    # genders_select['value'] = ['Cả nam và nữ'] + sorted(Game.Gender)
     ages_select['value'] = sorted(Game.Age)
     platform_select.current(0)
     genre_select.current(0)
     from_year_select.current(0)
     to_year_select.current(len(Game.YearOfRelease) - 1)
-    # genders_select.current(0)
     ages_select.current(0)
 
     # Hiển thị màn hình tìm kiếm
@@ -267,9 +265,8 @@ if __name__ == '__main__':
     purpose_select = ttk.Combobox(suggest_screen)
     purpose_label.grid(row=5, column=2, ipady=15)
     purpose_select.grid(row=5, column=3)
-
     # Dòng thứ sáu được sử dụng để chọn tuổi
-    age_scale = Scale(suggest_screen, label='Tuổi', font=('tMicrosoft YaHei',12,'bold'), from_=10, to=50, orient=HORIZONTAL,
+    age_scale = Scale(suggest_screen, label='Tuổi', font=('tMicrosoft YaHei',12,'bold'), from_=list(Game.Age)[0], to=list(Game.Age)[len(Game.Age) - 1], orient=HORIZONTAL,
              length=400, showvalue=1, tickinterval=10, resolution=1)
     age_scale.grid(row=6, column=0, columnspan=2, ipady=15,)
 
@@ -278,9 +275,9 @@ if __name__ == '__main__':
     submit_suggest_btn.grid(row=7, column=2, ipadx=70, ipady=10, pady=10)
 
     # Tải nội dung của menu thả xuống trên trang chủ theo dữ liệu
-    job_select['value'] = sorted(job_list)
-    interes_select['value'] = sorted(interest_list)
-    purpose_select['value'] = sorted(purpose_list)
+    job_select['value'] = [' '] + sorted(job_list)
+    interes_select['value'] = [' '] + sorted(interest_list)
+    purpose_select['value'] = [' '] + sorted(purpose_list)
     # radio.set(1)
     job_select.current(0)
     interes_select.current(0)

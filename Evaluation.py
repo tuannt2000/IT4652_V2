@@ -1,3 +1,4 @@
+import datetime
 NORECORD = 'chưa có thông tin'
 
 class Evaluation():
@@ -35,15 +36,49 @@ class Evaluation():
             result = ['Nhập vai', 'Mô phỏng', 'Âm nhạc', 'Thời trang']
         elif self.interes == 'Giao tiếp':
             result = ['Đồng đội nhiều người']
+        elif self.interes == 'Âm nhạc':
+            result = ['Âm nhạc']
+        elif self.interes == 'Thể thao':
+            result = ['Thể thao']
         else:
-            result = [self.interes]
+            result = []
+        return result
+
+    def filter_job(self):
+        result = ["Miễn phí", "Mất phí"]
+        if self.job == "Học sinh, sinh viên":
+            result = ["Miễn phí"]
+        elif self.job == "Người đi làm":
+            result = ["Mất phí"]
+        return result
+
+    def filter_purpose(self):
+        result = []
+        if self.purpose == "Tăng kỹ năng":
+            result = ["Phiêu lưu", "Giải đố"]
+        elif self.purpose == "Kết bạn":
+            result = ['Đồng đội nhiều người']
+        elif self.purpose == "Học tập":
+            result = ['Giải đố', 'Nấu ăn']
+        elif self.purpose == "Giải trí":
+            result = ['Giải trí']
         return result
 
     # sử dụng luật đưa ra kết quả
     def qualified(self, game):
         form = {}
         form['gd'] = self.filter_gender() or game.Genre
-        form['it'] = self.filter_interes()
+        form['it'] = self.filter_interes() or game.Genre
+        form['jb'] = self.filter_job()
+        form['pp'] = self.filter_purpose() or game.Genre
 
-        return game.genre in form['gd'] \
-        and (game.genre in form['it'] or game.number_of_player in form['it'])
+        if self.age >= 10:
+            age = self.age - 5
+        else:
+            age = 0
+
+        return (game.genre in form['pp'] or game.number_of_player in form['pp']) \
+        and game.genre in form['gd'] \
+        and game.price in form['jb'] \
+        and (game.genre in form['it'] or game.number_of_player in form['it']) \
+        and (game.age <= self.age and game.age >= age)
