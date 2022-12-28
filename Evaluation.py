@@ -72,13 +72,18 @@ class Evaluation():
         form['jb'] = self.filter_job()
         form['pp'] = self.filter_purpose() or game.Genre
 
-        if self.age >= 10:
-            age = self.age - 5
+        if self.age <= 12:
+            min_age = 0
+            max_age = 12
+        elif self.age <= 18:
+            min_age = 13
+            max_age = 18
         else:
-            age = 0
+            min_age = 19
+            max_age = 100
 
         return (game.genre in form['pp'] or game.number_of_player in form['pp']) \
         and game.genre in form['gd'] \
         and game.price in form['jb'] \
         and (game.genre in form['it'] or game.number_of_player in form['it']) \
-        and (game.age <= self.age and game.age >= age)
+        and (min_age <= game.age and max_age >= game.age)
