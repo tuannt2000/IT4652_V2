@@ -1,6 +1,3 @@
-import datetime
-NORECORD = 'chưa có thông tin'
-
 class Evaluation():
     def __init__(self, args):
         self.job = args['jb']
