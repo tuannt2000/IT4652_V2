@@ -63,7 +63,6 @@ def properties_filter():
     for game in game_list:
         if evaluate.qualified(game):
             ActionData.properties.append(game)
-            print(ActionData.properties)
     
     # Kết quả lựa chọn thiết bị đầu cuối đáp ứng yêu cầu của người dùng
     print('【RESULT】', len(ActionData.properties))
