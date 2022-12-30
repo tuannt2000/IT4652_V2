@@ -10,64 +10,29 @@ class Evaluation():
     def print_rule(self):
         print('【RULE】',self.job, self.gender, self.interes, self.purpose, self.age)
 
-    def filter_gender(self):
+    def filter_gender(self, rule_list):
         result = []
-        if self.gender == 1:
-            result = ['Hành động', 'Nhập vai', 'Chiến thuật', 'Kinh dị', 'Mô phỏng', 'Phiêu lưu', 'Thể thao', 'Giải đố', 'Đối kháng', 'Đua xe', 'Giải trí', 'Bắn súng']
-        elif self.gender == 2:
-            result = ['Giải trí', 'Mô phỏng', 'Âm nhạc', 'Giải đố', 'Thời trang', 'Nấu ăn']
+        for rule in rule_list:
+            if self.gender == 1 and rule['input'] == 'Nam':
+                result.append(rule['output'])
+            elif self.gender == 2 and rule['input'] == 'Nữ':
+                result.append(rule['output'])
         return result
     
-    def filter_interes(self):
-        if self.interes == 'Công nghệ':
-            result = ['Chiến thuật', 'Bắn súng', 'Mô phỏng']
-        elif self.interes == 'Du lịch':
-            result = ['Phiêu lưu']
-        elif self.interes == 'Mạo hiểm':
-            result = ['Hành động', 'Kinh dị', 'Phiêu lưu', 'Đua xe', 'Bắn súng']
-        elif self.interes == 'Mua sắm':
-            result = ['Thời trang']
-        elif self.interes == 'Nấu ăn':
-            result = ['Nấu ăn']
-        elif self.interes == 'Nghệ thuật':
-            result = ['Nhập vai', 'Mô phỏng', 'Âm nhạc', 'Thời trang']
-        elif self.interes == 'Giao tiếp':
-            result = ['Đồng đội nhiều người', 'Đồng đội 2 người']
-        elif self.interes == 'Âm nhạc':
-            result = ['Âm nhạc']
-        elif self.interes == 'Thể thao':
-            result = ['Thể thao']
-        else:
-            result = []
-        return result
-
-    def filter_job(self):
-        result = ["Miễn phí", "Mất phí"]
-        if self.job == "Học sinh, sinh viên":
-            result = ["Miễn phí"]
-        elif self.job == "Người đi làm":
-            result = ["Mất phí"]
-        return result
-
-    def filter_purpose(self):
+    def filter(self, rule_list, filter):
         result = []
-        if self.purpose == "Tăng kỹ năng":
-            result = ["Phiêu lưu", "Giải đố"]
-        elif self.purpose == "Kết bạn":
-            result = ['Đồng đội nhiều người', 'Đồng đội 2 người']
-        elif self.purpose == "Học tập":
-            result = ['Giải đố', 'Nấu ăn']
-        elif self.purpose == "Giải trí":
-            result = ['Hành động', 'Thời trang', 'Nhập vai', 'Phiêu lưu', 'Giải đố', 'Bắn súng', 'Đối kháng', 'Mô phỏng', 'Thể thao', 'Đua xe', 'Âm nhạc', 'Chiến thuật', 'Nấu ăn']
+        for rule in rule_list:
+            if filter == rule['input']:
+                result.append(rule['output'])
         return result
 
     # sử dụng luật đưa ra kết quả
-    def qualified(self, game):
+    def qualified(self, game, rule_list):
         form = {}
-        form['gd'] = self.filter_gender() or game.Genre
-        form['it'] = self.filter_interes() or game.Genre
-        form['jb'] = self.filter_job()
-        form['pp'] = self.filter_purpose() or game.Genre
+        form['gd'] = self.filter_gender(rule_list) or game.Genre
+        form['it'] = self.filter(rule_list, self.interes) or game.Genre
+        form['jb'] = self.filter(rule_list, self.job) or ["Mất phí", "Miễn phí"]
+        form['pp'] = self.filter(rule_list, self.purpose) or game.Genre
 
         if self.age <= 12:
             min_age = 0

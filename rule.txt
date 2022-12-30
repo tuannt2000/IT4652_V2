@@ -1,53 +1,53 @@
-GT2,TL15
-GT2,TL5
-GT2,TL12
-GT2,TL8
-GT2,TL13
-GT2,TL14
-GT1,TL1
-GT1,TL2
-GT1,TL3
-GT1,TL4
-GT1,TL5
-GT1,TL6
-GT1,TL7
-GT1,TL8
-GT1,TL9
-GT1,TL10
-GT1,TL15
-GT1,TL11
-ST1,TL3
-ST1,TL11
-ST1,TL5
-ST2,TL7
-ST3,TL6
-ST4,TL12
-ST5,TL1
-ST5,TL4
-ST5,TL6
-ST5,TL10
-ST5,TL11
-ST6,TL2
-ST6,TL5
-ST6,TL12
-ST6,TL13
-ST7,SN3
-ST8,TL14
-ST9,TL13
-NN1,G1
-NN2,G2
-DT1,DT1
-MD1,TL15
-MD1,TL2
-MD1,TL5
-MD1,TL6
-MD1,TL7
-MD1,TL8
-MD1,TL12
-MD1,TL13
-MD1,TL14
-MD2,SN3
-MD3,TL8
-MD3,TL14
-MD4,TL6
-MD4,TL8
+Input,Output
+Nữ,Giải trí
+Nữ,Mô phỏng
+Nữ,Âm nhạc
+Nữ,Giải đố
+Nữ,Thời trang
+Nữ,Nấu ăn
+Nam,Hành động
+Nam,Nhập vai
+Nam,Chiến thuật
+Nam,Kinh dị
+Nam,Mô phỏng
+Nam,Phiêu lưu
+Nam,Thể thao
+Nam,Giải đố
+Nam,Đối kháng
+Nam,Đua xe
+Nam,Giải trí
+Nam,Bắn súng
+Công nghệ,Chiến thuật
+Công nghệ,Bắn súng
+Công nghệ,Mô phỏng
+Thể thao,Thể thao
+Du lịch,Phiêu lưu
+Âm nhạc,Âm nhạc
+Mạo hiểm,Hành động
+Mạo hiểm,Kinh dị
+Mạo hiểm,Phiêu lưu
+Mạo hiểm,Đua xe
+Mạo hiểm,Bắn súng
+Nghệ thuật,Nhập vai
+Nghệ thuật,Mô phỏng
+Nghệ thuật,Âm nhạc
+Nghệ thuật,Thời trang
+Giao tiếp,Đồng đội nhiều người
+Nấu ăn,Nấu ăn
+Mua sắm,Thời trang
+Học sinh - sinh viên,Miễn phí
+Người đi làm,Mất phí
+Giải trí,Giải trí
+Giải trí,Nhập vai
+Giải trí,Mô phỏng
+Giải trí,Phiêu lưu
+Giải trí,Thể thao
+Giải trí,Giải đố
+Giải trí,Âm nhạc
+Giải trí,Thời trang
+Giải trí,Nấu ăn
+Kết bạn,Đồng đội nhiều người
+Học tập,Giải đố
+Học tập,Nấu ăn
+Tăng kỹ năng,Phiêu lưu
+Tăng kỹ năng,Giải đố

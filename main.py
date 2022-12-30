@@ -5,6 +5,7 @@ from tkinter import Label, Frame, Button, Checkbutton, Tk, IntVar, filedialog, R
 from Game import Game
 from ActionData import ActionData
 from Search import Search
+from Rule import Rule
 from Evaluation import Evaluation
 
 # Một danh sách các intVars được liên kết với chín xếp hạng khác nhau. Khi nó là 1, điều đó có nghĩa là nó đã được chọn
@@ -16,7 +17,7 @@ game_list = []
 # Trò chơi đáp ứng tiêu chí tìm kiếm của người dùng
 rating_list =  [5, 4, 3, 2, 1]
 # nghề nghiệp
-job_list = ['Học sinh, sinh viên', 'Người đi làm']
+job_list = ['Học sinh - sinh viên', 'Người đi làm']
 # sở thích
 interest_list = ['Công nghệ', 'Thể thao', 'Du lịch', 'Âm nhạc', 'Mạo hiểm', 'Nghệ thuật', 'Giao tiếp', 'Nấu ăn', 'Mua sắm']
 # mục đích
@@ -90,7 +91,7 @@ def properties_filter_suggest():
     evaluate = Evaluation(args)
     evaluate.print_rule()
     for game in game_list:
-        if evaluate.qualified(game):
+        if evaluate.qualified(game, rule_list):
             ActionData.properties.append(game)
 
     # Kết quả lựa chọn thiết bị đầu cuối đáp ứng yêu cầu của người dùng
@@ -195,7 +196,9 @@ if __name__ == '__main__':
         start = time.time()
         print('SYSTEM: Tệp csv đang tải...')
         action_data_agent = ActionData()
+        rule_data_agent = Rule()
         game_list = action_data_agent.load_properties(csv_filepath)
+        rule_list = rule_data_agent.load_properties('rule.txt')
         counter = round(time.time() - start, 2)
         result_message['text'] = 'Dữ liệu được tải, mất thời gian{}s, Chưa có nội dung được đề xuất'.format(counter)
         print('SYSTEM: Tệp csv đã được tải, mất thời gian{}s'.format(counter))
