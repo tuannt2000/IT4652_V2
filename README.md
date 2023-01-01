@@ -3,6 +3,7 @@
 https://www.python.org/ 
 <br/>
 Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH"
+
 ![alt text](./screenshots/setting.png)
 
 # clone project
