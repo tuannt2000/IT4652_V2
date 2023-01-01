@@ -1,6 +1,7 @@
 # hướng dẫn cài đặt chương trình trên window (Một số lệnh chạy có thể thay đổi khi áp dụng trên hệ điều hành khác)
 # cài đặt python (cài đặt theo link dưới)
 https://www.python.org/ 
+<space><space>
 Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH"
 ![alt text](./screenshots/setting.png)
 
