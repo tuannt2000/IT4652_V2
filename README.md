@@ -1,8 +1,8 @@
 # hướng dẫn cài đặt chương trình trên window (Một số lệnh chạy có thể thay đổi khi áp dụng trên hệ điều hành khác)
 # cài đặt python (cài đặt theo link dưới)
 https://www.python.org/ 
+Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH"
 ![alt text](./screenshots/setting.png)
-(Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH")
 
 # clone project
 git clone https://github.com/tuannt2000/IT4652_V2.git
