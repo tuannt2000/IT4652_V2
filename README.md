@@ -2,7 +2,7 @@
 # cài đặt python (cài đặt theo link dưới)
 https://www.python.org/ 
 <br/>
-Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH"
+Khi cài đặt python.exe, hãy chọn "Add python.exe to PATH" (như hình bên dưới)
 
 ![alt text](./screenshots/setting.png)
 
