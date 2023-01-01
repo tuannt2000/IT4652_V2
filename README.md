@@ -1,3 +1,4 @@
+# hướng dẫn cài đặt chương trình trên window
 # cài đặt python (link download)
 https://www.python.org/ 
 
